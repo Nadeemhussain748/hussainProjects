@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px auto;
+  display: block;
+}
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  color: blue;
+}
+
+button.dark-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+.dark-mode header,
+.dark-mode footer,
+.dark-mode section {
+  background-color: #1e1e1e;
+}
+
+/* Skill bars */
+.skill label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.bar {
+  width: 100%;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.bar div {
+  height: 20px;
+  background: #4caf50;
+  text-align: right;
+  padding-right: 5px;
+  color: white;
+}
+
+/* Project cards */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+  background-color: #fafafa;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Contact Form */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Social icons */
+#social a {
+  font-size: 30px;
+  margin: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+#social a:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+
+  .dark-toggle {
+    padding: 8px;
+    top: 5px;
+    right: 5px;
+  }
+}
